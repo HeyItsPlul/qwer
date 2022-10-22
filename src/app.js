@@ -17,4 +17,5 @@ app.get('/', (req, res) => {
     res.send('We Are Home!!')
 })
 //Server Start
-app.listen(5000, console.log('Api Started!!'))
+const PORT = process.env.PORT || 5000
+app.listen(PORT, console.log('Api Started!!'))
